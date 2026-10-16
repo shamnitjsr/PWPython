@@ -60,9 +60,9 @@
 #
 # myset={'apple', 'cherry', 'banana'}
 #
-# # myset.add("orange")
-# # print("After adding:", myset)  #{'apple', 'banana', 'orange', 'cherry'}
-#
+# myset.add("orange")
+# print("After adding:", myset)  #{'apple', 'banana', 'orange', 'cherry'}
+# #
 # myset.update(["mango","grapes"])
 # print(myset)  #{'banana', 'apple', 'mango', 'cherry', 'grapes'}
 
@@ -161,11 +161,11 @@
 
 #Appraoch 2:  using  & symbol
 
-myset1={"a","b","c",10}
-myset2={10,20,30,"a"}
-
-myset3=myset1 & myset2
-print(myset3) # {'a', 10}
+# myset1={"a","b","c",10}
+# myset2={10,20,30,"a"}
+#
+# myset3=myset1 & myset2
+# print(myset3) # {'a', 10}
 
 
 
