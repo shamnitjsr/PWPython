@@ -20,6 +20,8 @@ class Student:
 stu=Student("John")
 stu.set_marks(90)
 print(stu.get_marks())
+print(stu.name)
+
 
 
 

@@ -6,15 +6,9 @@ pack1/
  └── module2.py
 '''
 
-# File: module1.py
 
-def display():
-    print("This is display function from module1")
 
-# File: module2.py
 
-def show():
-    print("This is show function from module2")
 
 
 # File: client.py
@@ -23,16 +17,16 @@ import sys
 sys.path.append("C:/Automation/PWPython/day13/pack1") # Add package path to system path
 
 # ------ Approach 1: Importing full modules -----
-import module1
-import module2
+import pack1.module1
+import pack1.module2
 
-module1.display()   # Calls display() from module1
-module2.show()      # Calls show() from module2
+pack1.module1.display()   # Calls display() from module1
+pack1.module2.show()      # Calls show() from module2
 
 
 # ------ Approach 2: Importing everything (*) ------
-from module1 import *
-from module2 import *
+from pack1.module1 import *
+from pack1.module2 import *
 
 display()   # Directly calls display() without module name
 show()      # Directly calls show()

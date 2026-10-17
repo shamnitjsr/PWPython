@@ -1,19 +1,7 @@
 
 ######### Example 1: Importing functions and variables from a module
 
-# File: operations.py
 
-def add(num1, num2):
-    print(num1 + num2)
-
-def mul(num1, num2):
-    print(num1 * num2)
-
-person1 = {
-  "name": "John",
-  "age": 36,
-  "country": "Norway"
-}
 
 
 # File: client.py
@@ -44,21 +32,8 @@ mul(10, 20)
 
 #########  Example 2: Handling same function names in different modules
 
-# File: animal.py
 
-def fly():
-    print("Animal can't fly")
 
-def color():
-    print("Animal is Black")
-
-# File: bird.py
-
-def fly():
-    print("Bird can fly")
-
-def color():
-    print("Bird is Green")
 
 
 # File: animalbirdmain.py
@@ -89,18 +64,9 @@ fly()    # Always refers to latest imported fly() i.e. bird.fly()
 
 
 #########  Example 3: Using Classes from different modules
-# File: a.py
-
-class Animal:
-    def display(self):
-        print("I like Cow")
 
 
-# File: b.py
 
-class Bird:
-    def display(self):
-        print("I like Parrot")
 
 
 # File: abmain.py
